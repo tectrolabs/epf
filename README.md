@@ -29,7 +29,6 @@ Openssl development dependency can be installed on CentOS with the following com
 sudo yum install openssl-devel
 ```
 
-```
 ### Installing
 
 * Download the project:
