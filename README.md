@@ -40,7 +40,7 @@ sudo apt-get install libssl-dev
 
 * Download the project:
 ```
-git clone git@bitbucket.org:tectrolabs/epf.git
+git clone https://github.com/abelinski/epf
 ```
 * Build the 'epf' utility:
 ```
