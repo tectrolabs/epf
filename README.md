@@ -86,4 +86,4 @@ Andrian Belinski
 
 ## License
 
-This project is licensed under the [Andrian Belinski] License - see the LICENSE file for details
+see the LICENSE file for details
