@@ -4,10 +4,10 @@ The 'epf' is a utility used for feeding the Linux entropy pool with true random 
 
 ## Description
 
-In Linux, the entropy pool is used as a source of high quality randomness needed for a varioty of security operations. 
-The entropy pool is accessed using /dev/random device. To avoid entropy pool starvation, it is important to maintain the pool with enough amount of randomness. The 'epf' utility will continously whatch the entropy pool and will feed it with highh quality randomness when the entropy level is below the threshold value.
+In Linux, the entropy pool is used as a source of high quality randomness needed for a variety of security operations. 
+The entropy pool is accessed using /dev/random device. To avoid entropy pool starvation, it is important to maintain the pool with enough amount of randomness. The 'epf' utility will continuously monitor the entropy pool and will feed it with a high true randomness when the entropy level is below the threshold value.
 
-The true random byte stream is downloaded from a remote service using SSL and it is additionaly encrypted to ensure high security. 
+The true random byte stream is downloaded from a remote service using SSL and it is additionally encrypted to ensure high security. 
 
 ## Getting Started
 
@@ -78,10 +78,6 @@ Save the changes
 * Verify the /etc/random pool is getting populated by running the following command (it should not block):
 ```
 dd if=/dev/random of=/dev/null bs=4800 count=10 iflag=fullblock
-```
-
-```
-code blocks for commands
 ```
 
 ## Authors
