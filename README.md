@@ -55,7 +55,7 @@ sudo make install
 ```
 sudo mkdir /etc/epf
 sudo cp epf.properties /etc/epf/
-sudo cp epf-pubkey.pem /etc/epf
+sudo cp epf-pubkey.pem /etc/epf/
 ```
 * Create the log folder
 ```
