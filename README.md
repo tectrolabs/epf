@@ -20,10 +20,6 @@ The following dependencies are required to successfully build the 'epf' utility:
 * C++ compiler
 * openssl development
 
-C++ compiler can be installed in Ubuntu with the following command:
-```
-sudo apt-get install g++
-```
 C++ compiler can be installed in CentOS with the following command:
 ```
 sudo yum install gcc-c++
@@ -32,9 +28,7 @@ Openssl development dependency can be installed on CentOS with the following com
 ```
 sudo yum install openssl-devel
 ```
-Openssl development dependency can be installed on Ubuntu with the following command:
-```
-sudo apt-get install libssl-dev
+
 ```
 ### Installing
 
