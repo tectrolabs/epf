@@ -20,6 +20,7 @@ The following dependencies are required to successfully build the 'epf' utility:
 * C++ compiler
 * openssl development
 * git 
+* make
 
 C++ compiler can be installed on CentOS and RH with the following command:
 ```
@@ -45,6 +46,14 @@ sudo yum install git
 Git development dependency can be installed on Ubuntu with the following command:
 ```
 sudo apt-get install git
+```
+Make dependency can be installed on CentOS and RH with the following command:
+```
+sudo yum install make
+```
+Make development dependency can be installed on Ubuntu with the following command:
+```
+sudo apt-get install make
 ```
 
 ### Installing
