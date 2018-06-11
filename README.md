@@ -18,7 +18,7 @@ To build and run 'epf' utility you will need a sudo access permissions to your L
 The following dependencies are required to successfully build the 'epf' utility: 
 
 * C++ compiler
-* openssl development
+* openssl dev
 * git 
 * make
 
