@@ -60,7 +60,7 @@ sudo apt-get install make
 
 * Download the project:
 ```
-git clone https://github.com/abelinski/epf
+git clone https://github.com/tectrolabs/epf
 ```
 * Build the 'epf' utility:
 ```
