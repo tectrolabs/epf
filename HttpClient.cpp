@@ -231,7 +231,7 @@ bool HttpClient::sendGetRequest(std::string resource, CryptoToken *cryptoToken) 
 	cmd.append("GET ").append(resource).append(" HTTP/1.0\r\n");
 	cmd.append("Host: ").append(hostName).append("\r\n");
 	if (tlAuthToken.size() > 0) {
-		cmd.append("TL-ENT-SCE-AUTH-TOKEN: ").append(tlAuthToken).append("\r\n");
+		cmd.append("tl-ent-sce-auth-token: ").append(tlAuthToken).append("\r\n");
 	}
 	if (isStreamEncrypted) {
 		std::string cryptoTokenHex;
@@ -239,7 +239,7 @@ bool HttpClient::sendGetRequest(std::string resource, CryptoToken *cryptoToken) 
 			lastErrorMessage = "Could not create crypto token";
 			return false;
 		}
-		cmd.append("TL-ENT-SCE-CRYPTO-TOKEN: ").append(cryptoTokenHex).append("\r\n");
+		cmd.append("tl-ent-sce-crypto-token: ").append(cryptoTokenHex).append("\r\n");
 	}
 	cmd.append("\r\n");
 
