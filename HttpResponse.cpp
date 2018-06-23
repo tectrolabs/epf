@@ -111,7 +111,7 @@ bool HttpResponse::readContent(char *byteBuff, int byteCount) {
 			XorCryptor cryptor = XorCryptor();
 			cryptor.crypt((unsigned char*)byteBuff, byteCount, cryptoToken->getCripter(), cryptoToken->getCripterSize());
 			// Verify byte stream finger print
-			std::string expectedByteStreamHash = headers["TL-RESP-BYTEHASH"];
+			std::string expectedByteStreamHash = headers["tl-resp-bytehash"];
 			if (expectedByteStreamHash.size() == 0) {
 				lastErrorMessage = "Missing byte stream hash value";
 				return false;
