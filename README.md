@@ -97,7 +97,7 @@ Save the changes
 * Check for any errors in /var/log/epf/run-epf.log 
 * Verify the /etc/random pool is getting populated by running the following command (it should not block):
 ```
-dd if=/dev/random of=/dev/null bs=4800 count=10 iflag=fullblock
+dd if=/dev/random of=/dev/null bs=400 count=10 iflag=fullblock
 ```
 
 ## Authors
