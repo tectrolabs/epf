@@ -49,21 +49,21 @@ Property::Property(std::string propName, std::string propValue) {
 /**
  * @return property name
  */
-std::string Property::getName() {
+std::string Property::getName() const {
 	return propName;
 }
 
 /**
  * @return property value as string
  */
-std::string Property::getStringValue() {
+std::string Property::getStringValue() const {
 	return propValue;
 }
 
 /**
  * @return true if property value is provided
  */
-bool Property::isProvided() {
+bool Property::isProvided() const {
 	return propValue.size() > 0;
 }
 

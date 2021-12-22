@@ -74,7 +74,7 @@ HttpClient::~HttpClient() {
  *
  * @return last error message
  */
-std::string HttpClient::getLastErrorMessage() {
+std::string HttpClient::getLastErrorMessage() const {
 	return lastErrorMessage;
 }
 

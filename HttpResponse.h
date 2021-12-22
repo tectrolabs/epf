@@ -60,9 +60,9 @@ class HttpResponse {
 public:
 	HttpResponse(int fd, bool isSecure, SSL *ssl, bool isStreamEncrypted, CryptoToken *cryptoToken);
 	std::string getHeader(std::string headerName);
-	bool isResponseAvailable();
+	bool isResponseAvailable() const;
 	bool readContent(char *byteBuff, int byteCount);
-	std::string getLastErrorMessage();
+	std::string getLastErrorMessage() const;
 	int retrieveResponseCode();
 private:
 	std::map <std::string, std::string> headers;

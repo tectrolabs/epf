@@ -42,11 +42,11 @@ namespace entropyservice {
 class Property {
 public:
 	Property(std::string propName, std::string propValue);
-	std::string getName();
-	std::string getStringValue();
+	std::string getName() const;
+	std::string getStringValue() const;
 	int getIntValue();
 	bool getBoolValue();
-	bool isProvided();
+	bool isProvided() const;
 	bool isInteger();
 	bool isBoolean();
 private:

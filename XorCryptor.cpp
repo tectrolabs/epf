@@ -42,7 +42,7 @@ namespace entropyservice {
  * @keySize cryptoKeySize key size
  *
  */
-bool XorCryptor::crypt(unsigned char *bytes, int byteCount, unsigned char *cryptoKey, int cryptoKeySize) {
+bool XorCryptor::crypt(unsigned char *bytes, int byteCount, const unsigned char *cryptoKey, int cryptoKeySize) {
 	if (bytes == NULL || byteCount <= 1 || cryptoKey == NULL || cryptoKeySize < 1) {
 		return false;
 	}

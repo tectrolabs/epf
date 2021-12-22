@@ -51,7 +51,7 @@ public:
 	Property getProperty(std::string propName);
 	bool isPropertyDeclared(std::string propName);
 private:
-	void parseLines(std::istream& ins);
+	void parseLines(std::istream& lineStream);
 private:
 	std::map <std::string, std::string> propertyMap;
 };

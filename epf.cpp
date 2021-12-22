@@ -335,7 +335,7 @@ void displayUsage() {
  * @param argv
  * @return int - 0 when run successfully
  */
-int processArguments(int argc, char **argv) {
+int processArguments(int argc, const char **argv) {
 	if (argc < 2) {
 		std::cerr << std::endl << "Missing command line arguments" << std::endl << std::endl;
 		displayUsage();
@@ -355,14 +355,13 @@ bool getEntropyPoolSize() {
 	FILE *fp;
 	char *line = NULL;
 	size_t len = 0;
-	ssize_t read;
 
 	fp = fopen(KERNEL_POOLSIZE_LOCATOIN, "r");
 	if (fp == NULL) {
 		return false;
 	}
 
-	if ((read = getline(&line, &len, fp)) != -1) {
+	if (getline(&line, &len, fp) != -1) {
 		entropyPoolSizeBytes = atoi(line) / 8;
 		if (entropyPoolSizeBytes > MAX_POOL_SIZE_BYTES) {
 			entropyPoolSizeBytes = MAX_POOL_SIZE_BYTES;
@@ -490,7 +489,7 @@ bool isConfigurationValid() {
  *
  * @return return code
  */
-int main(int argc, char **argv) {
+int main(int argc, const char **argv) {
 
 	int status = processArguments(argc, argv);
 	if (status) {

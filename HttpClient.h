@@ -68,9 +68,9 @@ public:
 			bool isStreamEncrypted, RSACryptor *pubKeyCryptor);
 	virtual ~HttpClient();
 	bool connectToHost();
-	std::string getLastErrorMessage();
+	std::string getLastErrorMessage() const;
 	void closeConnection();
-	bool isConntected() { return isSocketCreated; };
+	bool isConntected() const { return isSocketCreated; }
 	bool sendGetRequest(std::string resource, CryptoToken *cryptoToken);
 	HttpResponse retrieveResponse(CryptoToken *cryptoToken);
 private:

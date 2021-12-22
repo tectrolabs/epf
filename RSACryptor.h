@@ -40,9 +40,9 @@ namespace entropyservice {
 class RSACryptor {
 public:
 	RSACryptor();
-	RSACryptor(int keySize);
+	explicit RSACryptor(int keySize);
 	RSACryptor(const char *keyFileName, bool isPublic);
-	bool isInitialized();
+	bool isInitialized() const;
 	bool exportPrivateKeyToFile(const char *fileName);
 	bool exportPublicKeyToFile(const char *fileName);
 	bool encryptWithPublicKey(unsigned char *toEncrypt, int toEncryptSizeBytes,	unsigned char *encrypted, int *encryptedSizeBytes);

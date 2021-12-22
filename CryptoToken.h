@@ -44,7 +44,7 @@ class CryptoToken {
 public:
 	bool createTokenAsText(std::string &tokenText);
 	bool loadTokenFomText(std::string &tokenText);
-	CryptoToken(RSACryptor *rsaCryptor);
+	explicit CryptoToken(RSACryptor *rsaCryptor);
 	unsigned char* getCripter();
 	int getCripterSize();
 	virtual ~CryptoToken();

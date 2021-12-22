@@ -57,14 +57,14 @@ bool Configuration::loadFromFile(char *filePathName) {
 /**
  * Parse one line and extract the property name and value. Ignore empty or commented lines
  *
- * @param &line to parse
+ * @param &lineStream to parse
  *
  */
-void Configuration::parseLines(std::istream& line) {
+void Configuration::parseLines(std::istream& lineStream) {
 
 	std::string s, key, value;
 
-	while (std::getline(line, s)) {
+	while (std::getline(lineStream, s)) {
 		std::string::size_type begin = s.find_first_not_of(" \f\t\v");
 
 		if (begin == std::string::npos)

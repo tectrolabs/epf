@@ -275,7 +275,7 @@ void RSACryptor::creteNewKey(int keySize) {
  * @return true if initialized
  *
  */
-bool RSACryptor::isInitialized() {
+bool RSACryptor::isInitialized() const {
 	return initializedKey;
 }
 

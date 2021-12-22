@@ -69,7 +69,7 @@ std::string HttpResponse::getHeader(std::string headerName) {
  *
  * @return true if response is available
  */
-bool HttpResponse::isResponseAvailable() {
+bool HttpResponse::isResponseAvailable() const {
 	return this->isAvailable;
 }
 
@@ -248,7 +248,7 @@ int HttpResponse::retrieveResponseCode() {
  *
  * @return last error message
  */
-std::string HttpResponse::getLastErrorMessage() {
+std::string HttpResponse::getLastErrorMessage() const {
 	return lastErrorMessage;
 }
 

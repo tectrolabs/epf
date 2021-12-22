@@ -40,7 +40,7 @@ namespace entropyservice {
 class XorCryptor {
 public:
 	XorCryptor();
-	bool crypt(unsigned char *bytes, int byteCount, unsigned char *cryptoKey, int cryptoKeySize);
+	bool crypt(unsigned char *bytes, int byteCount, const unsigned char *cryptoKey, int cryptoKeySize);
 	virtual ~XorCryptor();
 };
 
