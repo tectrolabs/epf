@@ -45,7 +45,7 @@ namespace entropyservice {
  * @param isStreamEncrypted true if needs to encrypt the byte stream
  * @param pubKeyCryptor public byte stream cryptor
  */
-HttpClient::HttpClient(std::string hostName, int port, bool isSecure, std::string tlAuthToken,
+HttpClient::HttpClient(const std::string &hostName, int port, bool isSecure, const std::string &tlAuthToken,
 		bool isStreamEncrypted, RSACryptor *pubKeyCryptor) {
 	this->hostName = hostName;
 	this->port = port;

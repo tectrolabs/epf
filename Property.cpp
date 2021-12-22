@@ -41,7 +41,7 @@ namespace entropyservice {
  * @param propValue
  *
  */
-Property::Property(std::string propName, std::string propValue) {
+Property::Property(const std::string &propName, const std::string &propValue) {
 	this->propName = propName;
 	this->propValue = propValue;
 }

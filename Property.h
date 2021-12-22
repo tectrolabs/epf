@@ -41,7 +41,7 @@ namespace entropyservice {
 
 class Property {
 public:
-	Property(std::string propName, std::string propValue);
+	Property(const std::string &propName, const std::string &propValue);
 	std::string getName() const;
 	std::string getStringValue() const;
 	int getIntValue();

@@ -64,7 +64,7 @@ namespace entropyservice {
 
 class HttpClient {
 public:
-	HttpClient(std::string hostName, int port, bool isSecure, std::string tlAuthToken,
+	HttpClient(const std::string &hostName, int port, bool isSecure, const std::string &tlAuthToken,
 			bool isStreamEncrypted, RSACryptor *pubKeyCryptor);
 	virtual ~HttpClient();
 	bool connectToHost();
